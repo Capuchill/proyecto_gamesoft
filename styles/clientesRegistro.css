@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(22, 32, 93);
+    font-family:  Bangers;
+}
+
+p{
+    font-family: Chakra Petch;
+}
+
+.registroCliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    color: rgb(7, 33, 56);
+    padding: 2rem;
+    color: aliceblue;
+    background-color: rgba(83, 135, 231, 0.429);
+    border-radius: 20px;
+}
+
+.registroCliente label{
+    margin-top: 5px;
+}
+
+.container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 50px;
+    background-color: rgba(109, 206, 173, 0.481);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

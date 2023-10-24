@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(22, 32, 93);
+    font-family:  Bangers;
+}
+
+p{
+    font-family: Chakra Petch;
+}
+
+.gestionCliente{
+    width: 100vw;
+    height: 100vw;
+    background-image: linear-gradient(rgba(2, 5, 33, 0.568), rgba(58, 71, 116, 0.61)), url(../assets/bg.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bg{
+    height: 100vw;
+    background-image: linear-gradient(rgba(2, 5, 33, 0.568), rgba(58, 71, 116, 0.61)), url(../assets/bg.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 70%;
+}
+
+.botonesCliente{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cliente{
+    color: rgb(112, 232, 144);
+    background-color: rgba(126, 149, 195, 0.528);
+    border: 3px solid rgb(137, 189, 191);
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.ptsCliente{
+    background-color: rgb(255, 170, 0);
+    border-radius: 20px;
+}
+
+.busquedaCliente{
+    width: 30vw;
+}

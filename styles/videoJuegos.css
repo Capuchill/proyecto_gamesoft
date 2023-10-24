@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(22, 32, 93);
+    font-family: Bangers;
+}
+
+p{
+    font-family: Chakra Petch;
+    font-size: 1rem;
+}
+
+@media(max-width: 991px) {
+    .sidebar{
+        background-color: rgba(161, 154, 154, 0.142);
+        backdrop-filter: blur(10px);
+    }  
+}
+
+.containerJuegos{
+    background-image: linear-gradient(rgba(2, 5, 33, 0.568), rgba(58, 71, 116, 0.61)), url(../assets/bg.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerJuego{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(151, 241, 189, 0.333);
+}
+
+.bodyJuego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color: rgba(56, 81, 156, 0.579);
+    color: white;
+    margin: 1rem;
+}
+
+.dataJuegos{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bg{
+    height: 100vh;
+    background-image: linear-gradient(rgba(2, 5, 33, 0.568), rgba(58, 71, 116, 0.61)), url(../assets/bg.jpg);
+    background-repeat: repeat;  
+    background-size: cover;
+}
+
+.registrar{
+    display: flex;
+}
+
+.registrar label{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 3%;
+}
+
+.botones{
+    display: flex;
+    margin: 10px;
+}
+
+.botones button{
+    margin: 5px;
+}
+
+.botones a{
+    margin: 5px;
+}
+
+.titu{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

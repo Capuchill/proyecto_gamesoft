@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Bangers&family=Chakra+Petch:wght@300&family=Orbitron&family=Press+Start+2P&family=Silkscreen&family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body class="vh-100">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4" href="#">
+        <img src="" width="60" alt="">
+        <span>GameSoft</span>
+      </a>
+      
+      <button 
+        class="navbar-toggler shadow-none border-0" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasNavbar" 
+        aria-controls="offcanvasNavbar" 
+        aria-label="Toggle navigation">
+        
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GameSoft</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="./clientPages/clientesPage.html">Clientes</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="./videojuegoPages/videojuegos.html">Juegos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div style="width: 100vw; height: 96vh;" class="inicio">
+
+    <div class="cont-inicio">
+      <div style="width: 100%; text-align: center;">
+        <img src="./assets/astronauta (1).png" class="img-fluid" alt="">
+        <p style="margin-bottom: 0;"><span style="font-size: 2rem;color: white;">Campus</span></p>
+        <h1 style="color: white;"> <span style="font-size: 5rem;"><span style="color:  rgb(57, 57, 221);">G</span>ame<span style="color: rgb(57, 57, 221);">S</span>oft</span></h1>
+      </div>
+      <div class="parra-inicio">
+        <p style="font-size: 1rem;">La puerta de entrada al control absoluto: Administra, supervisa y optimiza tu plataforma con facilidad. 
+          Toma el mando y haz que cada clic cuente en tu mundo de videojuegos.</p>
+      </div>
+      <div>
+        <a href="#niveles"><img src="./assets/flecha-hacia-abajo (5).png" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="niveles" class="niveles">
+    <div class="explicacionNiv" style="color: white;">
+      <div>
+        <h2>SISTEMA FIDELIZACIÓN</h2>
+        <h3 style="color: greenyellow;">niveles?</h3>
+      </div>
+      <div class="nivel">
+        <img src="./assets/fantasma (2).png" alt="" class="imgNivel">
+        <div class="descripcion">
+          <h4>Noob</h4>
+          <p>
+            Este nivel se le otorga a un cliente que está registrado pero no ha realizado compras
+            o al menos no las suficientes para alcanzar el siguiente. 
+          </p>
+        </div>
+      </div>
+      <div class="nivel">
+        <div class="descripcion">
+          <h4>Común</h4>
+          <p>
+            Al llegar a cierta cantidad de puntos de fidelizacion el cliente asciende su 
+            nivel a "común", la mayoria de clientes podria alcanzarlo con facilidad. Ademas
+            obtiene una membresia por parte de la empreza
+          </p>
+        </div>
+        <img src="./assets/elfo (2).png" alt="" class="imgNivel">
+      </div>
+      <div class="nivel">
+        <img src="./assets/kitsune (1).png" alt="" class="imgNivel">
+        <div class="descripcion">
+          <h4>Raro</h4>
+          <p>
+            Si sigue avanzando con las compras, llegará al nivel "raro", pocos clientes lo
+            logran pero su esfuerzo sera recompenzado con un porcentaje de descuento considerable 
+            en su siguiente compra.
+          </p>
+        </div>
+      </div>
+      <div class="nivel">
+        <div class="descripcion">
+          <h4>Legendario</h4>
+          <p>
+            El cliente que obtiene el nivel "legendario", se considera miembro especial entre los demás. 
+            Puede acceder a ofertas que se desbloquean a medida que aumenta sus puntos.
+          </p>
+        </div>
+        <img src="/assets/dragon (1).png" alt="" class="imgNivel">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

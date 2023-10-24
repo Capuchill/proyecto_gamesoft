@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Bangers&family=Chakra+Petch:wght@300&family=Orbitron&family=Press+Start+2P&family=Silkscreen&family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/videoJuegos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4" href="#">
+            <img src="" width="60" alt="">
+            <span>GameSoft</span>
+          </a>
+          
+          <button 
+            class="navbar-toggler shadow-none border-0" 
+            type="button" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar" 
+            aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GameSoft</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="../clientPages/clientesPage.html">Clientes</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="../videojuegoPages/videojuegos.html">Juegos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+        <!-- Button trigger modal -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE JUEGOS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="">ID</label>
+                <input type="number" class="form-control" id="idJuego">
+                <label for="">Nombre</label>
+                <input type="text" class="form-control" id="nombreJuego">
+                <label for="">Tematica</label>
+                <input type="text" class="form-control" id="tematicaJuego">
+                <label for="">URL imagen</label>
+                <input type="text" class="form-control" id="imgJuego">
+                <label for="">Valor licencia</label>
+                <input type="number" class="form-control" id="licenciaJuego">
+                <label for="">Puntos fidelizacion</label>
+                <input type="number" class="form-control" id="pstFideJuego">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="agregarJuego()">Registrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+     
+    <div class="bg">
+        <div class="containerJuegos">
+            <div class="titu">
+                <h1 style="color: aliceblue;">GESTION VIDEOJUEGOS</h1>
+                <img src="../assets/astronauta (3).png" class="img-fluid" alt="">
+            </div>
+            <div class="botones">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    registrar
+                </button>
+                <a href="./ventaJuegos.html" class="btn btn-primary">Vender</a>
+            </div>
+            <div class="registrar">
+                <input type="text" name="" id="buscarJuego" class="form-control" style="width: 30vw;">
+                <label for="" style="color: aliceblue;"><ion-icon name="search-outline"></ion-icon></label>
+            </div>
+            <div id="dataJuegos" class="dataJuegos">
+    
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="../juegosfunc/gestionJuegos.js"></script>
+</body>
+</html>
